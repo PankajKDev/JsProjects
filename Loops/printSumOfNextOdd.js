@@ -7,7 +7,7 @@ function printSumOfNextTwentyOdd(num){
     }
   let totalSum=0;
   let inputNum=num%2==0?num+1:num;
-  for(let i=0;i<20;i++){
+  for(let i=0;i<=20;i++){
     totalSum=totalSum+inputNum;
     inputNum+=2;
 
