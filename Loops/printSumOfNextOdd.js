@@ -5,17 +5,14 @@ function printSumOfNextTwentyOdd(num){
         console.log("invalid input");
         return;
     }
-    let totalSum=0;
-    let inputNum=num;
-    for(let i=0;i<20;i++){
-        if(inputNum%2==0){
-            inputNum=inputNum+1;
-        }
-        inputNum+=2;
-         totalSum=totalSum+inputNum;
+  let totalSum=0;
+  let inputNum=num%2==0?num+1:num;
+  for(let i=0;i<20;i++){
+    totalSum=totalSum+inputNum;
+    console.log(inputNum);
+    inputNum+=2;
 
-    }
-    console.log(totalSum);
-
+  }
+console.log(totalSum)
 }
 printSumOfNextTwentyOdd(5);
